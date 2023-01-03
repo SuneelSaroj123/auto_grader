@@ -19,7 +19,7 @@ def demo(opt):
         converter = CTCLabelConverter(opt.character)
     else:
         converter = AttnLabelConverter(opt.character)
-    opt.num_class = len(converter.character)
+    opt.num_class = 126
 
     if opt.rgb:
         opt.input_channel = 3
